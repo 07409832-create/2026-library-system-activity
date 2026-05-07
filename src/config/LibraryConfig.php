@@ -1,0 +1,12 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Library\Config;
+
+class LibraryConfig
+{
+    public const DAILY_FINE_RATE = 5.00;
+    public const DEFAULT_BORROW_DAYS = 14;
+}
+?>
