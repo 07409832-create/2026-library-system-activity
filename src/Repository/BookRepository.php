@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Repository;
 
-use App\DatabaseConnection;
+use App\Library\DatabaseConnection;
 use App\Entity\Book;
 use App\Exception\DatabaseException;
 use App\Exception\ValidationException;

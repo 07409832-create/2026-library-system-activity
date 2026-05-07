@@ -23,5 +23,3 @@ class DatabaseException extends RuntimeException{
         return new self('Database query failed: ' . $message);
     }
 }
-
-?>

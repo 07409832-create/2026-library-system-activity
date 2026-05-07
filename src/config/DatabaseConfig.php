@@ -11,4 +11,3 @@ class DatabaseConfig
     public const PASSWORD = '';
     public const DATABASE = 'library_db';
 }
-?>

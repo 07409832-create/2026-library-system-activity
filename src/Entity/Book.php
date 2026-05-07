@@ -35,7 +35,7 @@ class Book {
     /**
      * Gets all id from Book.
      *
-     * @return_array An array of all id
+     * @return int|null An array of all id
      */
     public function getId(): ?int{ 
         return $this->id;
@@ -77,4 +77,3 @@ class Book {
         $this->genre = $genre;
     }
 }
-?>

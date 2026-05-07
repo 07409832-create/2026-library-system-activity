@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Repository;
 
 use App\Config\LibraryConfig;
-use App\DatabaseConnection;
+use App\Library\DatabaseConnection;
 use App\Exception\DatabaseException;
 use App\Exception\ValidationException;
 /**
@@ -186,4 +186,3 @@ class BorrowRepository{
         }
     }
 }
-?>
