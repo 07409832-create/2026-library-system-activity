@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Library;
+namespace App\Config;
 
 use App\Config\DatabaseConfig;
 use App\Exception\DatabaseException;
@@ -44,7 +44,7 @@ class DatabaseConnection
         return $this->connection;
     }
 
-    public function prepare(string $sql): mysqli_stmt {
+    public function prepare(string $sql): \mysqli_stmt {
         $statement = $this->connection->prepare($sql);
         if (!$statement) {
             throw DatabaseException::queryFailed($this->connection->error);
@@ -53,7 +53,7 @@ class DatabaseConnection
     }
 
 
-    public function query(string $sql): mysqli_result|bool{
+    public function query(string $sql): \mysqli_result{
         $result = $this->connection->query($sql);
         if (!$result) {
             throw DatabaseException::queryFailed($this->connection->error);

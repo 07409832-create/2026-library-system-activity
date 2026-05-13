@@ -1,18 +1,20 @@
 <?php
 
 declare(strict_types=1);
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 
 require_once __DIR__ . '/../src/Config/DatabaseConfig.php';
 require_once __DIR__ . '/../src/Config/LibraryConfig.php';
 require_once __DIR__ . '/../src/Exception/DatabaseException.php';
 require_once __DIR__ . '/../src/Exception/ValidationException.php';
 require_once __DIR__ . '/../src/Entity/Book.php';
-require_once __DIR__ . '/../src/Library/DatabaseConnection.php';
+require_once __DIR__ . '/../src/Config/DatabaseConnection.php';
 require_once __DIR__ . '/../src/Repository/BookRepository.php';
 require_once __DIR__ . '/../src/Repository/BorrowRepository.php';
 require_once __DIR__ . '/../src/Service/LibraryService.php';
 
-use App\Library\DatabaseConnection;
+use App\Config\DatabaseConnection;
 use App\Service\LibraryService;
 
 $connection = new DatabaseConnection();
@@ -116,12 +118,12 @@ switch ($action) {
         echo '<html><head><title>Library Management System</title></head><body>';
         echo '<h1>Library Management System</h1>';
         echo '<nav>';
-        echo '<p><a href="?act=list">📚 List All Books</a></p>';
-        echo '<p><a href="?act=add">➕ Add New Book</a></p>';
-        echo '<p><a href="?act=search">🔍 Search Books</a></p>';
-        echo '<p><a href="?act=borrow">📖 Borrow Book</a></p>';
-        echo '<p><a href="?act=overdue">⚠️ View Overdue Books</a></p>';
-        echo '<p><a href="?act=report">📊 Generate Report</a></p>';
+        echo '<p><a href="?act=list"> List All Books</a></p>';
+        echo '<p><a href="?act=add"> Add New Book</a></p>';
+        echo '<p><a href="?act=search"> Search Books</a></p>';
+        echo '<p><a href="?act=borrow">Borrow Book</a></p>';
+        echo '<p><a href="?act=overdue">View Overdue Books</a></p>';
+        echo '<p><a href="?act=report">Generate Report</a></p>';
         echo '</nav>';
         echo '</body></html>';
         break;

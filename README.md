@@ -14,8 +14,9 @@ and overdue fines. Built following PSR-12 coding standards.
 ## File Structure
 ```
 src/
-├── Config/          # Configuration and constants
+├── Config/          # Configuration, connectionand constants
 │   ├── DatabaseConfig.php
+    ├──  DatabaseConnection.php 
 │   └── LibraryConfig.php
 ├── Entity/          # Data models (Book, BorrowRecord, Student)
 │   ├── Book.php
@@ -37,6 +38,7 @@ src/
     └── report_view.php
 public/              # Web-accessible entry point
 └── index.php
+└── sql.sql for database
 docs/                # Generated PHPDoc output
 
 ### Adding a Book

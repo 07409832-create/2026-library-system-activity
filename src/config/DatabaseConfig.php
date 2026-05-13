@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Library\Config;
+namespace App\Config;
 
 class DatabaseConfig
 {
-    public const HOST = 'localhost';
-    public const USERNAME = 'root';
-    public const PASSWORD = '';
-    public const DATABASE = 'library_db';
+    public const host = 'localhost';
+    public const username = 'root';
+    public const password = '';
+    public const database = 'library_db';
 }

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Service;
 
 use App\Config\LibraryConfig;
-use App\Library\DatabaseConnection;
+use App\Config\DatabaseConnection;
 use App\Entity\Book;
 use App\Repository\BookRepository;
 use App\Repository\BorrowRepository;

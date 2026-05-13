@@ -8,6 +8,15 @@
 <body>
     <h1>Library Books</h1>
     
+    <nav>
+        <p><a href="/2026-library-system-activity/public/index.php">← Back to Home</a></p>
+        <p><a href="/2026-library-system-activity/public/index.php?act=add">Add New Book</a></p>
+        <p><a href="/2026-library-system-activity/public/index.php?act=search">Search Books</a></p>
+        <p><a href="/2026-library-system-activity/public/index.php?act=borrow">Borrow Book</a></p>
+        <p><a href="/2026-library-system-activity/public/index.php?act=overdue">View Overdue Books</a></p>
+        <p><a href="/2026-library-system-activity/public/index.php?act=report">Generate Report</a></p>
+    </nav>
+    
     <table>
         <thead>
             <tr>

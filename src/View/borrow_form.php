@@ -8,7 +8,16 @@
 <body>
     <h1>Borrow a Book</h1>
     
-    <form method="post" action="index.php?act=borrow">
+    <nav>
+        <p><a href="/2026-library-system-activity/public/index.php">← Back to Home</a></p>
+        <p><a href="/2026-library-system-activity/public/index.php?act=list">List All Books</a></p>
+        <p><a href="/2026-library-system-activity/public/index.php?act=add">Add New Book</a></p>
+        <p><a href="/2026-library-system-activity/public/index.php?act=search">Search Books</a></p>
+        <p><a href="/2026-library-system-activity/public/index.php?act=overdue">View Overdue Books</a></p>
+        <p><a href="/2026-library-system-activity/public/index.php?act=report">Generate Report</a></p>
+    </nav>
+    
+    <form method="post" action="/2026-library-system-activity/public/index.php?act=borrow">
         <div class="form-group">
             <label for="student_id">Student ID:</label>
             <input type="number" id="student_id" name="student_id" required>
